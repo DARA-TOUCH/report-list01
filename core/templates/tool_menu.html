@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Tool Menu{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+<div class="col-menu">
+    
+    <div class="menu">
+
+        <a href="{% url 'acc_report:upload_form' %}" class="button">
+            <div class="menu-item">
+                <h3>Accounting Report</h3>
+            </div>
+        </a>
+
+        <a href="#" class="button">
+            <div class="menu-item">
+                <h3>Admin Report</h3>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="menu">
+
+        <a href="#" class="button">
+            <div class="menu-item">
+                <h3>List01 Report</h3>
+            </div>
+        </a>
+
+        <a href="#" class="button">
+            <div class="menu-item">
+                <h3>List07 Report</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="menu">
+        <a href="{% url 'acc_report:download_acc_report_form' %}" class="button">
+            <div class="menu-item">
+                <h3>Accounting Report <br> <sub><sub></sub><sub>(Custom Excel Form)</sub></sub></sub></h3>
+            </div>
+
+        </a>
+    </div>
+
+    <div class="menu">
+        <a href="#" class="button">
+            <div class="menu-item">
+                <h3>Others <br> <sub><sub></sub><sub>(Custom Excel Form)</sub></sub></sub></h3>
+            </div>
+
+        </a>
+    </div>
+</div>
+
+{% endblock %}

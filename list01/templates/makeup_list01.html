@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Makeup Template List01 {% endblock %}
+{% block content %}
+<body>
+    <h1>Make Up Template List01</h1>
+    <form method="POST" action="{% url 'list01:makeup_list01_template' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="btn btn-primary">
+            <label for="single_sheet_template">List01 Single Sheet Template</label>
+            <input type="file" name="single_sheet_template" id="single_sheet_template">
+        </div>        
+        <button type="submit">Create List01 Template</button>
+    </form>
+</body>
+{% endblock %}

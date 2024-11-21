@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Welcome{% endblock %}</title> <!--Welcome is Default Title-->
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <h1>
+    <a href="{% url 'core:welcome' %}">PREK CHAK CUSTOMS AND EXCISE OFFICE</a>
+  </h1>
+    
+  <nav>
+    <ul>
+      <li><a href="{% url 'core:welcome' %}">Home</a></li>
+      <li><a href="{% url 'core:my_personal_info' %}">About</a></li>
+      <li><a href="{% url 'core:disclaimer' %}">Tools</a></li>
+      <li><a href="#">Chatbot</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="{% url 'core:web_list' %}">GDCE</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  {% block content %}
+  {% endblock %} 
+</main>
+  
+  <footer>
+    <p>&copy; Developed by Mr. TOUCH DARA, 17th Generation Customs Official, ID: 1823. All Rights Reserved.</p>
+  </footer>
+  
+</body>
+</html>

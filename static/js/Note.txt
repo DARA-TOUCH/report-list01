@@ -1,0 +1,9 @@
+// Promises
+
+// What is a Promise?
+
+// A Promise is an assurance or guarantee that something will happen in the future.
+// A person can promise another person a specific outcome or result. A Promise is 
+// an object that holds the future value of an async opertion.
+
+// Example: Requesting some data from a server, the promise, promise as to get that data which we can use in future.

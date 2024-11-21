@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} សាលាកប័ត្រ {% endblock %}
+{% block content %}
+<body>
+    <h1>សាលាកប័ត្រ</h1>
+
+    <!-- Display success messages -->
+    {% if messages %}
+        <div class="alert alert-success">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Show download link if the file was generated -->
+    {% if request.session.output_file %}
+        <p><a href="{% url 'list01:download_salakabatt_data' %}" class="btn btn-success">Download File</a></p>
+    {% endif %}
+</body>
+{% endblock %}

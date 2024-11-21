@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} សាលាកប័ត្រ {% endblock %}
+{% block content %}
+<body>
+    <h1>សាលាកប័ត្រ</h1>
+    <form method="POST" action="{% url 'list01:salakabatt_data' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% for index, label in file_labels %}
+        <div class="btn btn-primary">
+            <label for="file{{ index }}">{{ label }}</label>
+            <input type="file" name="file{{ index }}" id="file{{ index }}">
+        </div>        
+        {% endfor %}
+        <button type="submit">Process For Data</button>
+    </form>
+</body>
+{% endblock %}
