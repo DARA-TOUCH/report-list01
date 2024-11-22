@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(197, 204, 178);
+}
+
+header {
+    background-color: #3498db; /* Adjust background color to your preference */
+    color: rgb(223, 117, 117); /* Set text color to white */
+    padding: 20px; /* Add some padding for spacing */
+    justify-content: space-between; /* Distribute elements evenly with space in between */
+}
+
+body header {
+    background-color: #19b193;
+} 
+
+nav ul {
+    list-style-type: none;
+    padding: 5;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    color: #eedcdc;
+    text-decoration: none;
+    background-color: #19b193;
+    width: 100px;
+}
+
+#hero {
+    background-image: url('GDCE_Logo.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    background-color: #1a44c2;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: none;
+    color: #090462;
+    text-align: center;
+    padding: 1px;
+}
+
+.col-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 10px;
+}
+
+.col-menu > * {
+    flex-basis: calc(50% - 10px); /* Set the width of the items to be half of the container's width, minus the gap */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item {
+    background-color: #6883c7;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+  

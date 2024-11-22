@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-*j8s937@q6ow)=iro==w(%tb#6!a%ic=x%xz%ijakv7&(s)on#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["report-list01-e9d7502d0017.herokuapp.com/"]
+ALLOWED_HOSTS = ["Dara1823.pythonanywhere.com"]
 
 
 # Application definition
@@ -163,4 +163,4 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFESH_TOKEN_LIFETIME": timedelta(days=1),
 }
-# DEBUG = False
+DEBUG = False
